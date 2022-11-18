@@ -36,7 +36,142 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-logo">
+                  <img src="images/logo.png" alt="image">
+              </div>
+              <div class="address mt-3">
+                  <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <span>
+                      12 Old Northern Road, Baulkham Hills, NSW, 2153
+                  </span>
+              </div>
+              <div class="call mt-3">
+                  <span>
+                      <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <span>
+                      <a href="tel:+5092937557">(509) 293-7557</a>
+                  </span>
+              </div>
+              <ul class="social-link mt-3">
+                  <li>
+                      <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+              <div class="row">
+                  <div class="col-4">
+                      <div class="footer-links">
+                          <h5>USEFUL LINKS</h5>
+                          <ul class="menu-links">
+                              <li>
+                                  <a href="#">Home</a>
+                              </li>
+                              <li>
+                                  <a href="#">About us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Snowboard</a>
+                              </li>
+                              <li>
+                                  <a href="#">Snow Ski</a>
+                              </li>
+                              <li>
+                                  <a href="#">Accessories</a>
+                              </li>
+                              <li>
+                                  <a href="#">Backcountry</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-4">
+                      <div class="footer-links">
+                          <br>
+                          <br>
+                          <ul class="menu-links">
+                              <li>
+                                  <a href="#">Skateboard</a>
+                              </li>
+                              <li>
+                                  <a href="#">Special Offer</a>
+                              </li>
+                              <li>
+                                  <a href="#">Brands</a>
+                              </li>
+                              <li>
+                                  <a href="#">Blog</a>
+                              </li>
+                              <li>
+                                  <a href="#">ClientReview</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-4">
+                      <div class="footer-links">
+                          <h5>SUPPORT & HELP</h5>
+                          <ul class="menu-links">
+                              <li>
+                                  <a href="#">My Account</a>
+                              </li>
+                              <li>
+                                  <a href="#">Size & Buying Guides</a>
+                              </li>
+                              <li>
+                                  <a href="#">FAQs</a>
+                              </li>
+                              <li>
+                                  <a href="#">Term & Conditions</a>
+                              </li>
+                              <li>
+                                  <a href="#">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#">Contact Us</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="footer-links">
+                  <h5>SUBSCRIBE OUR NEWSLETTER</h5>
+                  <form action="#">
+                      <div class="input-group mb-3">
+                          <input type="email" class="form-control" placeholder="ENTER YOUR EMAIL ADDRESS"
+                              aria-describedby="button-addon2">
+                          <a href="#" class="cta-btn red">
+                              Send
+                          </a>
+                      </div>
+                  </form>
+                  <p>
+                      Sign up to our newsletter and as a welcome gift you’ll get a 5% discount on your next order.
+                  </p>
+                  <a href="#">View More Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+{% comment %} <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -336,7 +471,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> {% endcomment %}
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
