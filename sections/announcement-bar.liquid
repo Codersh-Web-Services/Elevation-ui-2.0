@@ -1,4 +1,4 @@
-{%- for block in section.blocks -%}
+{% comment %} {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
       <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
@@ -20,7 +20,37 @@
         {%- endif -%}
       </div>
   {%- endcase -%}
-{%- endfor -%}
+{%- endfor -%} {% endcomment %}
+
+<div class="announcement-bar">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="announcement-content">
+                  <p>ends of season sale ends in</p>
+                  <div id="timer">
+                      <div class="box">
+                          <div id="days"></div>
+                          <p>DAYS</p>
+                      </div>
+                      <div class="box">
+                          <div id="hours"></div>
+                          <p>HOURS</p>
+                      </div>
+                      <div class="box">
+                          <div id="minutes"></div>
+                          <p> MINUTES</p>
+                      </div>
+                      <div class="box">
+                          <div id="seconds"></div>
+                          <p>SECONDS</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> 
 
 {% schema %}
 {
