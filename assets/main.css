@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-kerning: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.announcement-bar {
+    background-color: #bd000e;
+    padding: 0.5rem 0 0.2rem 0;
+}
+
+.announcement-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-content #timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.announcement-content p {
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.announcement-content .box {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.box p {
+    display: block;
+    font-size: 8px;
+    color: #fff;
+    margin-top: 0.2rem;
+}
+
+#timer #days {
+    font-size: 14px;
+    color: #005953;
+    background: #fff;
+    height: 26px;
+    width: 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#timer #hours {
+    font-size: 14px;
+    color: #005953;
+    background: #fff;
+    height: 26px;
+    width: 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#timer #minutes {
+    font-size: 14px;
+    color: #005953;
+    background: #fff;
+    height: 26px;
+    width: 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#timer #seconds {
+    font-size: 14px;
+    color: #005953;
+    background: #fff;
+    height: 26px;
+    width: 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+/* <--------- ANNOUNCEMENT BAR CSS END ---------> */
+
+.hero-section {
+    background-image: url('../images/banner-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.hero-section h1 {
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.hero-section .rating {
+    margin-bottom: 2.5rem;
+}
+
+.hero-section .rating .number {
+    margin-left: 0.3rem;
+    font-size: 14px;
+}
+
+.rating svg {
+    color: #FFCB06;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background: #005953;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background-color: #BD000E;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.cta-btn.red {
+    text-decoration: none;
+    background: #BD000E;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+}
+
+.cta-btn.red:hover,
+.cta-btn.red:focus {
+    background-color: #fff;
+    color: #005953;
+}
+
+/* <-------- HERO SECTION END --------> */
+
+.brands {
+    background-color: #005953;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+/* <-------- BRANDS SECTION END --------> */
+
+.summer-sale {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.summer-sale .virtical-lines {
+    position: absolute;
+    right: 290px;
+    top: 12px;
+}
+
+.summer-sale svg {
+    position: absolute;
+    top: -85px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+
+.summer-sale svg:hover,
+.summer-sale svg:focus {
+    fill: #bd000e;
+}
+
+.summer-sale svg#left {
+    right: 310px;
+}
+
+.summer-sale svg#right {
+    right: 250px;
+}
+
+.summer-sale .sale-title {
+    margin-bottom: 2rem;
+}
+
+.summer-sale .cta-btn {
+    float: right;
+}
+
+.summer-sale h2 {
+    color: #001F1C;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.summer-sale h2+p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #001F1C;
+
+}
+
+.sale-content {
+    border: 1px solid rgb(0 0 0 / 10%);
+    height: 100%;
+    position: relative;
+    box-shadow: 0.03rem 1rem 1rem #00000012;
+    margin: 0 0.6rem;
+    cursor: pointer;
+}
+
+.sale-content p {
+    margin-bottom: 0;
+}
+
+.sale-content .discount-lable {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: #BD000E;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    left: 0;
+    border-radius: 0 0 100px 0;
+    padding-left: 0.8rem;
+    font-style: italic;
+}
+
+.sale-content .title {
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #005953;
+    font-weight: 700;
+    word-spacing: 1.5px;
+    padding: 1rem;
+}
+
+.sale-content .price {
+    padding: 0 1rem 1rem;
+}
+
+.price del {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001F1C;
+}
+
+.price p {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #BD000E;
+}
+
+/* <-------- SUMMER-SALE SECTION END --------> */
+
+.contact {
+    background-color: #BD000E;
+    padding: 5rem 0 10rem 0;
+    color: #fff;
+}
+
+.contact h3 {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.contact h4 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.content-img {
+    margin-top: -8rem;
+}
+
+.contact-img {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0.1rem 1rem 1rem 0.8rem #00000024;
+}
+
+.content-img .inner-container-1 {
+    background: url('../images/shadow-1.png') left top no-repeat;
+    background-color: #fff;
+    box-shadow: 0.1rem 1rem 1rem 0.8rem #00000024;
+    padding: 3rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.content-img .inner-container-2 {
+    background: url('../images/shadow-2.png') left top no-repeat;
+    background-color: #fff;
+    box-shadow: 0.1rem 1rem 1rem 0.8rem #00000024;
+    padding: 3rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.content-img .inner-container-3 {
+    background: url('../images/shadow-3.png') left top no-repeat;
+    background-color: #fff;
+    box-shadow: 0.1rem 1rem 1rem 0.8rem #00000024;
+    padding: 3rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.content-img p {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #001F1C;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+/* <-------- CONTACT SECTION END --------> */
+
+.feedback {
+    padding: 4rem 0 8rem 0;
+    background-color: #005953;
+    overflow-x: hidden;
+}
+
+.feedback .feedback-title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.feedback-title h3 {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.feedback-title h4 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.feedback-title .vertical-lines {
+    position: absolute;
+    right: 295px;
+    top: 11px;
+}
+
+.feedback-title .cta-btn {
+    float: right;
+}
+
+.feedback .slide-content {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.feedback .feedback-slider {
+    position: relative;
+    z-index: 1;
+}
+
+.feedback .feedback-slider::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/left-quote.png');
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -45px;
+    left: 100px;
+    opacity: 0.4;
+}
+
+.feedback .feedback-slider::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/right-quote.png');
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -65px;
+    right: 100px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.slide-content .inner-content {
+    display: flex;
+    align-items: center;
+}
+
+.inner-content h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 14px;
+    color: #BD000E;
+}
+
+.inner-content .name {
+    padding-left: 1rem;
+}
+
+.name .rating i {
+    color: #FFCB06;
+}
+
+.slide-content p {
+    padding-top: 1.5rem;
+}
+
+.feedback svg {
+    position: absolute;
+    fill: #fff;
+    top: -7.90rem;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+
+.feedback svg:hover,
+.feedback svg:focus {
+    fill: #bd000e;
+}
+
+.feedback svg#right {
+    right: 14rem;
+}
+
+.feedback svg#left {
+    right: 20rem;
+}
+
+
+/* <-------- FEEDBACK SECTION END --------> */
+
+.accessories {
+    padding: 6rem 0 1rem 0;
+}
+
+.accessories .accessories-title {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.accessories-title .cta-btn {
+    float: right;
+}
+
+.accessories-title h3 {
+    color: #001F1C;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.accessories-title h4 {
+    color: #001F1C;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.accessories .accessories-content {
+    text-align: center;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.accessories-content img {
+    width: 100%;
+}
+
+.accessories-content span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* <-------- ACCESSORIES SECTION END --------> */
+
+.quality {
+    margin-bottom: 5rem;
+}
+
+.quality h3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.quality p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.quality p a {
+    font-weight: 700;
+    color: #BD000E;
+}
+
+/* <-------- QUALITY SECTION END --------> */
+
+.buying-guide {
+    background-image: url('../images/red-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.ski-img {
+    position: absolute;
+    top: -65px;
+}
+
+/* <-------- BUYING GUIDE SECTION END --------> */
+
+.our-blog {
+    padding: 7rem 0;
+    background-color: #f1f1f1;
+}
+
+.our-blog h3 {
+    margin-bottom: 3rem;
+}
+
+.our-blog h5 {
+    color: #001F1C;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.date span {
+    font-size: 12px;
+    color: #BD000E;
+    font-weight: 700;
+}
+
+.comments {
+    display: inline-block;
+}
+
+.comments i {
+    color: #BD000E;
+    margin-right: 0.5rem;
+}
+
+.comments span {
+    font-size: 14px;
+}
+
+/* <-------- OUR BLOG SECTION END --------> */
+
+.check-out {
+    background-color: #f1f1f1;
+}
+
+.check-out h2 {
+    color: #001F1C;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+.check-out .img-wrap {
+    border: 1px solid transparent;
+}
+
+
+.check-out .img-wrap img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* <-------- CHECK OUT SECTION END --------> */
+
+
+.footer {
+    padding: 5rem 0;
+    background-color: #005953;
+    color: #fff;
+}
+
+.footer-logo {
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+.footer-links h5 {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-links .menu-links {
+    padding-left: 0;
+}
+
+.footer-links .menu-links li {
+    padding: 0.3rem 0;
+}
+
+.footer-links .menu-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer .call a {
+    text-decoration: none;
+}
+
+.social-link {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-link li {
+    height: 30px;
+    width: 30px;
+    background-color: #BD000E;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: all .35s ease-in-out;
+}
+
+.social-link li:hover {
+    transform: translateY(-4px);
+}
+
+.social-link a i {
+    font-size: 18px;
+    color: #fff;
+}
+
+form .form-control {
+    font-size: 0.7rem;
+}
+
+.footer-links p {
+    font-size: 13px;
+}
+
+.footer-links a,
+.call a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #BD000E;
+    box-shadow: none;
+}
