@@ -97,7 +97,7 @@ body {
 /* <--------- ANNOUNCEMENT BAR CSS END ---------> */
 
 .hero-section {
-    background-image: url('../images/banner-2.png');
+    background-image: url('https://cdn.shopify.com/s/files/1/0679/5096/9121/files/banner-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -286,6 +286,15 @@ body {
     font-size: 25px;
     line-height: 30px;
     color: #BD000E;
+}
+
+.summer-sale .img-wrap {
+    width: 100%;
+}
+
+.summer-sale .img-wrap img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* <-------- SUMMER-SALE SECTION END --------> */
@@ -547,7 +556,7 @@ body {
 /* <-------- QUALITY SECTION END --------> */
 
 .buying-guide {
-    background-image: url('../images/red-banner.png');
+    background-image: url('https://cdn.shopify.com/s/files/1/0679/5096/9121/files/red-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
